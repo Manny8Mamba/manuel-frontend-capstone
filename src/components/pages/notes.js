@@ -46,7 +46,7 @@ export default class Notes extends Component {
         if (this.state.loading) {
             return (
                 <div className='items-page-wrapper'>
-                    <h2>Items</h2>
+                    <h2>Notes</h2>
                     <div className='items-wrapper'>
                         <div className="loading">Loading...</div>
                     </div>
@@ -57,7 +57,7 @@ export default class Notes extends Component {
         else if (this.state.error) {
             return (
                 <div className='items-page-wrapper'>
-                    <h2>Items</h2>
+                    <h2>Notes</h2>
                     <div className='items-wrapper'>
                         <div className="error">An error occured... Please try again later.</div>
                     </div>
@@ -68,7 +68,7 @@ export default class Notes extends Component {
         else {
             return (
                 <div className='items-page-wrapper'>
-                    <h2>Items</h2>
+                    <h2>Notes</h2>
                     <div className="items-wrapper">
                         {this.renderNotes()}
                     </div>
